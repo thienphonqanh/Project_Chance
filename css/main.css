@@ -1,124 +1,3 @@
-/*---------------------------------------
-  CUSTOM PROPERTIES ( VARIABLES )             
------------------------------------------*/
-:root {
-    --white-color:                  #ffffff;
-    --primary-color:                #5d52ba;
-    --secondary-color:              #0dcaf0;
-    --section-bg-color:             #f0f8ff;
-    --custom-btn-bg-color:          #f65129;
-    --social-icon-link-bg-color:    #7f73eb;
-    --dark-color:                   #000000;
-    --p-color:                      #717275;
-    --border-color:                 #e9eaeb;
-  
-    --body-font-family:             'League Spartan', sans-serif;
-  
-    --h1-font-size:                 62px;
-    --h2-font-size:                 48px;
-    --h3-font-size:                 36px;
-    --h4-font-size:                 32px;
-    --h5-font-size:                 24px;
-    --h6-font-size:                 22px;
-    --p-font-size:                  20px;
-    --btn-font-size:                16px;
-    --copyright-font-size:          14px;
-  
-    --border-radius-large:          100px;
-    --border-radius-medium:         30px;
-    --border-radius-small:          10px;
-  
-    --font-weight-thin:             100;
-    --font-weight-light:            300;
-    --font-weight-normal:           400;
-    --font-weight-semibold:         600;
-    --font-weight-bold:             700;
-  }
-  
-  body {
-    background-color: var(--white-color);
-    font-family: var(--body-font-family); 
-  }
-  
-  
-  /*---------------------------------------
-    TYPOGRAPHY               
-  -----------------------------------------*/
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--dark-color);
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: -0.5px;
-  }
-  
-  h1,
-  h2 {
-    letter-spacing: -1.5px;
-  }
-  
-  h1 {
-    font-size: var(--h1-font-size);
-    line-height: normal;
-    font-weight: var(--font-weight-bold);
-  }
-  
-  h2 {
-    font-size: var(--h2-font-size);
-  }
-  
-  h3 {
-    font-size: var(--h3-font-size);
-  }
-  
-  h4 {
-    font-size: var(--h4-font-size);
-  }
-  
-  h5 {
-    font-size: var(--h5-font-size);
-  }
-  
-  h6 {
-    font-size: var(--h6-font-size);
-  }
-  
-  p {
-    color: var(--p-color);
-    font-size: var(--p-font-size);
-    font-weight: var(--font-weight-light);
-  }
-  
-  ul li {
-    color: var(--p-color);
-    font-size: var(--p-font-size);
-    font-weight: var(--font-weight-light);
-  }
-  
-  a, 
-  button {
-    touch-action: manipulation;
-    transition: all 0.3s;
-  }
-  
-  a {
-    color: var(--primary-color);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: var(--custom-btn-bg-color);
-  }
-  
-  b,
-  strong {
-    font-weight: var(--font-weight-bold);
-  }
-  
-  
   /*---------------------------------------
     SECTION               
   -----------------------------------------*/
@@ -709,127 +588,7 @@
   }
   
   
-  /*---------------------------------------
-    ABOUT              
-  -----------------------------------------*/
-  .about-page .about-section {
-    padding-top: 100px;
-    padding-bottom: 0;
-  }
-  
-  .about-section .custom-text-block {
-    background: var(--secondary-color);
-  }
-  
-  .about-image-wrap,
-  .video-thumb {
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-  }
-  
-  .about-info {
-    background: var(--primary-color);
-    border-radius: var(--border-radius-medium);
-    border-top: 30px solid var(--secondary-color);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .about-info-text h4 {
-    font-weight: var(--font-weight-normal);
-  }
-  
-  .about-image-border-radius {
-    border-radius: var(--border-radius-medium);
-  }
-  
-  .about-image {
-    display: block;
-    object-fit: cover;
-    height: 100%;
-  }
-  
-  .custom-border-radius-start {
-    border-radius: var(--border-radius-medium) 0 0 var(--border-radius-medium);
-  }
-  
-  .custom-border-radius-end {
-    border-radius: 0 var(--border-radius-medium) var(--border-radius-medium) 0;
-  }
-  
-  .video-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .youtube-icon {
-    background: var(--custom-btn-bg-color);
-    font-size: var(--h2-font-size);
-    color: var(--white-color);
-    border-radius: var(--border-radius-large);
-    width: 90px;
-    height: 90px;
-    line-height: 110px;
-    text-align: center;
-    display: block;
-    animation: pulse-animation 2s infinite;
-    transition: all 0.5s;
-  }
-  
-  .youtube-icon:hover {
-    color: var(--white-color);
-  }
 
-  
-  
-  /*---------------------------------------
-    SERVICES              
-  -----------------------------------------*/
-  .services-block {
-    border-top: 25px solid transparent;
-    border-radius: var(--border-radius-medium);
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s;
-    padding: 40px;
-  }
-  
-  .services-block:hover,
-  .services-section .services-block-wrap:nth-of-type(odd) .services-block {
-    background: var(--section-bg-color);
-    border-top-color: var(--secondary-color);
-  }
-  
-  .services-block-icon {
-    background: var(--white-color);
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-    border-radius: var(--border-radius-large);
-    display: block;
-    color: var(--secondary-color);
-    font-size: var(--h2-font-size);
-    line-height: normal;
-    width: 120px;
-    height: 120px;
-    line-height: 135px;
-    margin: auto;
-    margin-bottom: 24px;
-    text-align: center;
-    position: relative;
-    transition: all 0.5s;
-  }
-  
-  .services-block-body p {
-    margin-bottom: 0;
-  }
-  
-  
 /*--------------------
     Ngành trọng điểm       
   --------------------*/
@@ -973,108 +732,21 @@
     cursor: pointer;
   }
   
-  .section-handbook .btn-loadHandBook {
-    display: block;
-    margin: 40px auto;
+  .section-handbook .more-handbook {
+    width: 300px;
     color: var(--primary-color);
-    padding: 8px 22px;
     font-weight: var(--font-weight-bold);
     outline: none;
     border: none;
     background-color: var(--section-bg-color);
   }
   
-  .section-handbook .btn-loadHandBook:hover {
+  .section-handbook .more-handbook:hover {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
   }
   
-  .loader {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: var(--secondary-color);
-    animation: spinner 1s ease infinite;
-  }
   
-  /*---------------------------------------
-    REVIEWS              
-  -----------------------------------------*/
-  .reviews-section {
-    background: var(--section-bg-color);
-  }
-  
-  .reviews-carousel .owl-item img,
-  .avatar-image {
-    border: 5px solid var(--section-bg-color);
-    border-radius: var(--border-radius-large);
-    width: 65px;
-    height: 65px;
-    object-fit: cover;
-  }
-  
-  .reviews-carousel .owl-dots .owl-dot span {
-    background: var(--white-color);
-    border: 5px solid transparent;
-    padding: 5px;
-    transition: all 0.5s;
-  }
-  
-  .reviews-carousel .owl-dots .owl-dot.active span, 
-  .reviews-carousel .owl-dots .owl-dot:hover span {
-    background: var(--white-color);
-    border-color: var(--custom-btn-bg-color);
-  }
-  
-  .reviews-thumb {
-    background: var(--white-color);
-    border-radius: var(--border-radius-medium);
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 24px;
-  }
-  
-  .reviews-body {
-    position: relative;
-    padding: 30px 40px 30px 70px;
-  }
-  
-  .reviews-info {
-    position: relative;
-    padding: 40px 40px 20px 40px;
-  }
-  
-  .reviews-title {
-    color: var(--p-color);
-  }
-  
-  .reviews-info strong,
-  .reviews-info small {
-    display: block;
-  }
-  
-  .reviews-info strong {
-    color: var(--dark-color);
-    line-height: normal;
-  }
-  
-  .bi-star-fill {
-    color: var(--custom-btn-bg-color);
-  }
-  
-  .reviews-bottom small {
-    font-size: var(--btn-font-size);
-    font-weight: var(--font-weight-normal);
-  }
-  
-  .quote-icon {
-    position: absolute;
-    top: 0;
-    left: 30px;
-    opacity: 0.05;
-  }
-
     /*---------------------------------------
     Section - introducing              
   -----------------------------------------*/
@@ -1096,7 +768,7 @@
 /*--------------------
   Danh sách việc làm       
   --------------------*/
-.section-job {
+.job-section {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--section-color);
@@ -1109,27 +781,6 @@
 .job-listings-page .hero-form .badge:hover {
   background: var(--primary-color);
 }
-
-.search-tag {
-  width: 25%;
-  margin-left: 10px;
-  height: 100%;
-  border: 2px solid rgb(203, 199, 199);
-}
-
-.search-tag h5 {
-  font-size: var(--p-font-size);
-  background: #e6eefa;
-  border-bottom: 2px solid rgb(203, 199, 199);
-}
-
-.tag-item {
-  background-color: #f5f5f5;
-  color: #2f4ba0;
-  margin: 5px;
-}
-
-
 
 .list-job {
   list-style: none;
@@ -1355,6 +1006,21 @@
   cursor: pointer;
   color: var(--white-color);
 }
+
+.tag-keyword-block h6 {
+  background-color: #e6eefa;
+}
+
+.tag-keyword-item a {
+  background-color: #ecebeb;
+}
+
+.career-suggestions {
+  background: #efeff8;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  
+}
   
   
   /*---------------------------------------
@@ -1479,6 +1145,7 @@
   .site-footer {
     padding-top: 100px;
     padding-bottom: 0;
+    background-color: var(--primary-color);
   }
   
   .site-footer-link {
@@ -1679,5 +1346,75 @@
 
   .btn-login:hover {
     background-color: var(--primary-color);
-   
   }
+
+
+  /* 
+    Trang cẩm nang nghề nghiệp
+  
+  */
+  .handbook-login:hover {
+    color: var(--primary-color) !important;
+    transition: .4s all;
+  }
+
+  .handbook-page .navbar-nav {
+    position: relative;
+  }
+
+  .handbook-page .nav-item::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    transition: .5s all;
+  }
+
+  .handbook-page .nav-item:nth-child(1)::after {
+    bottom: 20%;
+    left: 5px;
+  }
+
+  .handbook-page .nav-item:nth-child(1):hover::after {
+    width: 160px;
+    transition: .5s all;
+  }
+
+  .handbook-page .nav-item:nth-child(2)::after {
+    bottom: 20%;
+    left: 180px;
+  }
+
+  .handbook-page .nav-item:nth-child(2):hover::after {
+    width: 160px;
+    transition: .5s all;
+  }
+
+  .handbook-page .nav-item:nth-child(3)::after {
+    bottom: 20%;
+    left: 34.5%;
+  }
+
+  .handbook-page .nav-item:nth-child(3):hover::after {
+    width: 140px;
+    transition: .5s all;
+  }
+
+  .handbook-page .nav-item:nth-child(4)::after {
+    bottom: 20%;
+    left: 50%;
+  }
+
+  .handbook-page .nav-item:nth-child(4):hover::after {
+    width: 100px;
+    transition: .5s all;
+  }
+
+  .handbook-page .nav-item:nth-child(5):hover::after {
+    display: none;
+  }
+  
+ 
+
+  
