@@ -88,5 +88,3 @@ btnPrevIndustries.onclick = function() {
     $('.industries-block').scrollLeft -= widthItem
 }
 
-
-

@@ -137,6 +137,20 @@
     #exampleModalToggle2 .modal-content {
       height: 100vh;
     }
+
+    .handbook-page .nav-item::after {
+      width: 0;
+      height: 0;
+    }
+
+    .la-ban-su-nghiep-page .nav-item:nth-child(1)::after,
+    .tram-sac-ky-nang-page .nav-item:nth-child(2)::after,
+    .toa-do-nhan-tai-page .nav-item:nth-child(3)::after,
+    .ki-ot-vui-ve-page .nav-item:nth-child(4)::after {
+      width: 0;
+      height: 0;
+    }
+  
   }
 
   @media (min-width: 768px) and (max-width: 991px) {
@@ -169,6 +183,10 @@
     .modal-dialog-scrollable .modal-content {
       width: 100vw;
       height: 100vh;
+    }
+
+    .tilte-handbook {
+      font-size: 28px;
     }
   }
   
@@ -258,6 +276,18 @@
     
     .section-introducing {
       padding: 30px;
+    }
+
+    .list-page {
+      margin-top: 15px;
+    }
+
+    .job-listings-page .side-bar {
+      margin-top: 15px;
+    }
+
+    .tilte-handbook {
+      font-size: var(--h4-font-size);
     }
     
   }

@@ -800,12 +800,6 @@
   margin-bottom: 25px;
   padding: 25px;
   transition: all 0.5s ease;
-  /* margin: 0px 68px 25px; */
-  display: flex;
-}
-
-.job-title-link {
-  color: var(--dark-color);
 }
 
 .job-thumb p {
@@ -1022,7 +1016,21 @@
   
 }
   
-  
+.general-information {
+  background-color: #f5f3ff;
+}
+
+
+.special-content {
+  white-space: normal; /* Cho phép văn bản xuống dòng tự động */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Số dòng tối đa hiển thị */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
   /*---------------------------------------
     CTA               
   -----------------------------------------*/
@@ -1143,9 +1151,10 @@
     SITE FOOTER              
   -----------------------------------------*/
   .site-footer {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 0;
     background-color: var(--primary-color);
+    margin-top: 40px;
   }
   
   .site-footer-link {
@@ -1358,7 +1367,11 @@
     transition: .4s all;
   }
 
-  .handbook-page .navbar-nav {
+  .handbook-page .navbar-nav,
+  .la-ban-su-nghiep-page .navbar-nav,
+  .tram-sac-ky-nang-page .navbar-nav,
+  .toa-do-nhan-tai-page .navbar-nav,
+  .ki-ot-vui-ve-page .navbar-nav {
     position: relative;
   }
 
@@ -1393,7 +1406,7 @@
 
   .handbook-page .nav-item:nth-child(3)::after {
     bottom: 20%;
-    left: 34.5%;
+    left: 32%;
   }
 
   .handbook-page .nav-item:nth-child(3):hover::after {
@@ -1403,7 +1416,7 @@
 
   .handbook-page .nav-item:nth-child(4)::after {
     bottom: 20%;
-    left: 50%;
+    left: 46.25%;
   }
 
   .handbook-page .nav-item:nth-child(4):hover::after {
@@ -1414,7 +1427,58 @@
   .handbook-page .nav-item:nth-child(5):hover::after {
     display: none;
   }
-  
- 
 
+  .tilte-handbook:hover {
+    color: var(--social-icon-link-bg-color);
+    transition: .3s all;
+  }
   
+  .post-category {
+    background-color: #00c8c9;
+  }
+
+  .handbook-item:hover {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    border-radius: var(--border-radius-small);
+    transition: .4s all;
+  }
+
+  .la-ban-su-nghiep-page .nav-item:nth-child(1)::after {
+    content: '';
+    width: 160px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 20%;
+    left: 5px;
+  }
+
+  .tram-sac-ky-nang-page .nav-item:nth-child(2)::after {
+    content: '';
+    width: 160px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 20%;
+    left: 184px;
+  }
+
+  .toa-do-nhan-tai-page .nav-item:nth-child(3)::after {
+    content: '';
+    width: 140px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 20%;
+    left: 32%;
+  }
+
+  .ki-ot-vui-ve-page .nav-item:nth-child(4)::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 20%;
+    left: 46.25%;
+  }
